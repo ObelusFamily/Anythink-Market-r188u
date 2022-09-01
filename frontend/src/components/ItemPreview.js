@@ -29,6 +29,10 @@ const ItemPreview = (props) => {
     }
   };
 
+  if (!item.image || item.image === "") {
+    item.image = "http//localhost:3001/placeholder.png";
+  }
+
   return (
     <div
       className="card bg-dark border-light p-3"
