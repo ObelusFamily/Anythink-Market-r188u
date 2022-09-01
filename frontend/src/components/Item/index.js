@@ -38,7 +38,7 @@ class Item extends React.Component {
       return null;
     }
 
-    const img = {this.props.item.image === "" ? "http://localhost:3001/placeholder.png : this.props.item.image}
+    const img = this.props.item.image === "" ? "http://localhost:3001/placeholder.png" : this.props.item.image
 
     const markup = {
       __html: marked(this.props.item.description, { sanitize: true }),
